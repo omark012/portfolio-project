@@ -3,9 +3,12 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const Contact = () => {
   return (
-    <section className="h-auto p-10 md:p-0 mx-6 mt-40" id="contact">
+    <section
+      id="contact"
+      className="mx-6 p-5 sm:p-10 lg:p-0 mt-20 md:mt-40 scroll-mt-[6.625rem]"
+    >
       <div className="max-w-6xl mx-auto">
-        <div className="grid md:grid-cols-2 items-center justify-center">
+        <div className="grid lg:grid-cols-2 items-center justify-center">
           {/* G1 */}
           <div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl mb-3 font-semibold text-center">
@@ -22,17 +25,17 @@ const Contact = () => {
           </div>
 
           {/* G2 */}
-          <form className="w-full bg-white p-4  border-2 border-neutral-200 rounded-xl shadow-md sm:p-6 md:p-8 ">
+          <form className="w-full bg-white border-2 border-neutral-300 rounded-xl shadow-md p-4 sm:p-6 md:p-8 ">
             <div className="grid sm:grid-cols-2 gap-4">
               <input
                 type="text"
-                className="w-[100%] border-2 px-6 py-2 text-md rounded outline-none"
+                className="border-2 px-6 py-2 rounded outline-none"
                 placeholder="Enter your name"
                 required
               />
               <input
                 type="email"
-                className="w-full border-2 px-6 py-2 text-md rounded outline-none"
+                className="border-2 px-6 py-2 text-base rounded outline-none"
                 placeholder="Enter your email"
                 required
               />
@@ -40,7 +43,7 @@ const Contact = () => {
 
             <textarea
               rows={8}
-              className="w-full border-2 mt-6 px-6 py-2 text-md rounded outline-none"
+              className="w-full border-2 mt-6 px-6 py-2 text-base rounded outline-none"
               placeholder="Enter your message"
             ></textarea>
             <hr className="my-5 border-0 w-full h-0.5 bg-gradient-to-r from-transparent via-neutral-300" />

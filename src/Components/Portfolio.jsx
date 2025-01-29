@@ -60,7 +60,10 @@ const Portfolio = () => {
   }, [emblaApi]);
 
   return (
-    <section className=" p-10 md:p-0 mx-6 mt-40" id="portfolio">
+    <section
+      id="portfolio"
+      className=" mx-6 p-5 sm:p-10 lg:p-0 mt-20 md:mt-40 scroll-mt-[6.625rem]"
+    >
       <div className="max-w-6xl mx-auto">
         {/* heading */}
         <div>
@@ -77,7 +80,7 @@ const Portfolio = () => {
         {/* Portfolio container with embla carousel */}
         <div className="embla">
           <div
-            className="embla__viewport border border-gray-500 rounded-lg max-w-6xl mx-auto mt-10 mb-5"
+            className="embla__viewport border border-gray-400 rounded-lg max-w-6xl mx-auto mt-10 mb-5"
             ref={emblaRef}
           >
             <div className="embla__container">
@@ -88,25 +91,26 @@ const Portfolio = () => {
                   className="embla__slide portfolio-card p-2 grid md:grid-cols-2 gap-6 items-center justify-center"
                 >
                   {/* Grid 1 */}
-                  <div className="portfolio-img-wrap w-full  rounded-lg overflow-hidden">
+                  <div className="portfolio-img-wrap w-full rounded-lg overflow-hidden">
                     <a
                       href={item.link}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <img
-                        className=""
+                        className="object-cover"
                         src={item.img}
                         alt="there should be a pic"
                       />
                     </a>
                   </div>
+
                   {/* Grid 2 */}
                   <div className="portfolio-data">
-                    <h3 className="portfolio-title text-2xl capitalize font-bold mb-2 ">
+                    <h3 className="portfolio-title text-xl md:text-2xl capitalize font-bold mb-2 ">
                       {item.title}
                     </h3>
-                    <p className="portfolio-description text-justify mb-4">
+                    <p className="portfolio-description text-base md:text-lg text-justify mb-4">
                       {item.description}
                     </p>
                     <a

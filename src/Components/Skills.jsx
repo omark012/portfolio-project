@@ -68,7 +68,10 @@ const Skills = () => {
   ];
 
   return (
-    <section className="p-10 mx-6 md:p-0 mt-50" id="skills">
+    <section
+      id="skills"
+      className="mx-6 p-5 sm:p-10 lg:p-0 mt-20 md:mt-40 scroll-mt-[6.625rem]"
+    >
       <div className="max-w-6xl mx-auto">
         <h1 className="text-4xl md:text-5xl lg:text-6xl mb-3 font-semibold text-center">
           <span className="text-neutral-700 dark:text-neutral-300">Tech</span>{" "}
@@ -87,14 +90,14 @@ const Skills = () => {
           {techs.map((tech) => (
             <div
               key={tech.id}
-              className="w-[100px] md:w-[130px] flex flex-col justify-center items-center rounded-lg cursor-pointer transition-all duration-300 ease-in hover:scale-110"
+              className="card w-[100px] md:w-[130px] flex flex-col justify-center items-center rounded-lg cursor-pointer transition-all duration-200 ease-in hover:scale-110"
               style={{
                 boxShadow: `0 4px 6px -1px ${tech.color}, 0 2px 4px -2px ${tech.color}`,
                 color: `${tech.color}`,
               }}
             >
               <img className="w-[50%]" src={tech.src} alt={tech.title} />
-              <p>{tech.title}</p>
+              <p className="text-base md:text-lg">{tech.title}</p>
             </div>
           ))}
         </div>

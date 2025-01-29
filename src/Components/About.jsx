@@ -3,7 +3,10 @@ import developer from "../images/developer.gif";
 
 const About = () => {
   return (
-    <section className="p-10 mx-6 mt-20 md:p-0 md:mt-40" id="about">
+    <section
+      id="about"
+      className="mx-6 p-5 sm:p-10 lg:p-0 mt-20 md:mt-40 scroll-mt-[6.625rem]"
+    >
       <div className="max-w-6xl mx-auto">
         <h1 className="text-4xl md:text-5xl lg:text-6xl mb-3 font-semibold text-center">
           {" "}
@@ -15,10 +18,14 @@ const About = () => {
           Passionate in Designing Clean Code and Seamless User Experiences
         </p>
         <div className="grid md:grid-cols-2 gap-10 items-center">
-          <div className="w-full bg-amber-200">
-            <img src={developer} alt="Animated GIF of a frontend developer" />
+          <div className="showcase-image bg-amber-100 rounded-xl w-full max-w-md md:max-w-xl mx-auto hover:scale-95 hover:shadow-sm transition duration-200 ">
+            <img
+              className="object-contain "
+              src={developer}
+              alt="there is supposed to be a pic"
+            />
           </div>
-          <div className="about-text text-[19px] text-justify">
+          <div className="about-text text-base md:text-lg text-justify">
             <p>
               {" "}
               Hello! My name is Omar Khan, a frontend developer and an aspiring

@@ -3,7 +3,10 @@ import { PiSuitcaseBold } from "react-icons/pi";
 
 const Experience = () => {
   return (
-    <section className="mx-6 mt-20 p-5 sm:p-10 md:p-0 " id="experience">
+    <section
+      id="experience"
+      className="mx-6 p-5 sm:p-10 lg:p-0 mt-20 scroll-mt-[6.625rem]"
+    >
       <div className="max-w-6xl mx-auto">
         <div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl mb-3 font-semibold text-center">
@@ -12,13 +15,16 @@ const Experience = () => {
           </h1>
           <hr className="my-5 border-0 w-[50%] mx-auto h-0.5 bg-gradient-to-r from-transparent via-neutral-300 to-transparent" />
 
-          <p className="w-full text-center text-neutral-500 italic mb-10 text-lg md:text-xl">
+          <p
+            className="w-full text-center text-neutral-500 italic mb-10 
+          text-lg md:text-xl"
+          >
             What I’ve Accomplished So Far{" "}
           </p>
         </div>
 
-        <div className="card group cursor-pointer p-3 md:p-10 max-w-4xl mx-auto bg-[#9df1df] rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl border-b-8 border-amber-200">
-          <h3 className="job-title flex items-end gap-3 text-2xl md:text-4xl font-semibold mb-2 group-hover:tracking-widest transition-all duration-300">
+        <div className="card group cursor-pointer p-3 md:p-10 max-w-4xl mx-auto bg-[#9df1df] rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl border-b-8 border-amber-200">
+          <h3 className="job-title flex items-end gap-3 text-2xl md:text-4xl font-semibold mb-2 sm:group-hover:tracking-widest transition-all duration-300">
             <PiSuitcaseBold />
             Frontend Developer
           </h3>
@@ -26,7 +32,7 @@ const Experience = () => {
             Trivialworks , India
           </p>
 
-          <ul className="job-scope mt-3 list-disc pl-5 text-lg space-y-3">
+          <ul className="job-scope mt-3 list-disc pl-5 text-base sm:text-lg space-y-3">
             <li className="scope-item">
               Developing and maintaining web applications using React.js and
               other related technologies.

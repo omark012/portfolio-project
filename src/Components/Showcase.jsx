@@ -10,16 +10,19 @@ const Showcase = () => {
   });
 
   return (
-    <section className="mx-6 p-10 md:p-0 " id="showcase">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-4">
+    <section
+      id="showcase"
+      className="mx-6 p-5 sm:p-10 lg:p-0 scroll-mt-[11.625rem] "
+    >
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 md:gap-4">
         {/* Text */}
         <div
           className="showcase-text flex flex-col justify-center items-start 
         gap-3"
         >
-          <p className="w-full intro text-center md:text-left text-black text-3xl md:text-4xl font-semibold">
+          <p className="w-full intro text-center md:text-left text-black text-2xl md:text-3xl lg:text-4xl font-semibold">
             Hello, I'm <span className="text-red-600 font-bold">Omar Khan</span>
-            <span className="text-4xl wave">👋</span>
+            <span className="text-2xl md:text-4xl ml-1">👋</span>
           </p>
 
           <div
@@ -29,7 +32,7 @@ const Showcase = () => {
             {text}
             <Cursor cursorColor="red" />
           </div>
-          <div className="w-full description text-black text-lg md:text-xl font-[420] text-justify ">
+          <div className="description w-full text-black text-lg md:text-xl font-[420] text-justify ">
             As a passionate front-end developer based in India, I specialize in
             creating stunning, user-friendly websites that not only look amazing
             but also function seamlessly. Let’s bring your vision to life and
@@ -39,7 +42,7 @@ const Showcase = () => {
           <a
             href="/data/file/Resume.pdf"
             target="_blank"
-            className="relative inline-flex items-center justify-start overflow-hidden font-semibold transition-all duration-150 ease-in-out border rounded-xl group z-20 py-2 pl-3 pr-10 text-sm md:py-3 md:pl-4 md:pr-12 md:text-base hover:pl-8 hover:pr-4 md:hover:pl-10 md:hover:pr-6 lg:hover:pl-12 lg:hover:pr-8 bg-black text-white dark:bg-white dark:text-black border-black dark:border-white"
+            className="relative inline-flex items-center justify-start overflow-hidden mt-5 font-semibold transition-all duration-150 ease-in-out border rounded-xl group z-20 py-2 pl-3 pr-10 text-sm md:py-3 md:pl-4 md:pr-12 md:text-base hover:pl-8 hover:pr-4 md:hover:pl-10 md:hover:pr-6 lg:hover:pl-12 lg:hover:pr-8 bg-black text-white dark:bg-white dark:text-black border-black dark:border-white"
           >
             <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-white dark:bg-black z-10"></span>
 
@@ -95,8 +98,12 @@ const Showcase = () => {
         </div>
 
         {/* Image */}
-        <div className="showcase-image w-full bg-amber-100 overflow-hidden rounded-xl">
-          <img src={profile} alt="there is supposed to be a pic" />
+        <div className="showcase-image bg-amber-100 rounded-xl w-full max-w-md md:max-w-xl mx-auto hover:scale-95 hover:shadow-sm transition duration-200 ">
+          <img
+            className="w-full h-auto object-contain rounded-xl"
+            src={profile}
+            alt="there is supposed to be a pic"
+          />
         </div>
       </div>
     </section>

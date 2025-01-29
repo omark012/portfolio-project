@@ -19,9 +19,9 @@ function App() {
       <Showcase />
       <About />
       <Skills />
-      <Contact />
-      <Experience />
       <Portfolio />
+      <Experience />
+      <Contact />
       <Footer />
       <GoToTop />
     </div>
