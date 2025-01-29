@@ -18,12 +18,13 @@ const GoToTop = () => {
   }, []);
 
   const goToHandle = () => {
+    // function to move screen on top
     window.scrollTo({ top: 0, left: 0 });
   };
 
   return (
     <div
-      className={`fixed bottom-12 right-3 tex-xl bg-yellow-400 h-12 w-12 rounded-full z-40 cursor-pointer flex items-center justify-center hover:bg-[#333] transition-all duration-300 opacity-0 invisible ${
+      className={`fixed bottom-12 right-3 tex-xl bg-yellow-400 h-12 w-12 rounded-full z-40 cursor-pointer flex items-center justify-center hover:bg-[#333] animate-bounce transition-all duration-300 opacity-0 invisible ${
         showTopBtn && "opacity-100 visible"
       }`}
       onClick={goToHandle}

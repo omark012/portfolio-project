@@ -11,3 +11,5 @@
   flex: 0 0 100%;
   min-width: 0;
 }
+
+@custom-variant dark (&:where(.dark, .dark *));

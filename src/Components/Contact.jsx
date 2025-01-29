@@ -9,7 +9,10 @@ const Contact = () => {
           {/* G1 */}
           <div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl mb-3 font-semibold text-center">
-              <span>Let's</span> <span>Connect</span>
+              <span className="text-neutral-700 dark:text-neutral-300">
+                Let's
+              </span>{" "}
+              <span>Connect</span>
             </h1>
             <hr className="my-5 border-0 w-[50%] mx-auto h-0.5 bg-gradient-to-r from-transparent via-neutral-300 to-transparent" />
             <p className="w-full text-center text-neutral-500 italic mb-10 text-lg md:text-xl">

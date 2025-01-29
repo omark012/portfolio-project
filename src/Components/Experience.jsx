@@ -7,7 +7,8 @@ const Experience = () => {
       <div className="max-w-6xl mx-auto">
         <div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl mb-3 font-semibold text-center">
-            <span>Work</span> <span>Experience</span>
+            <span className="text-neutral-700 dark:text-neutral-300">Work</span>{" "}
+            <span>Experience</span>
           </h1>
           <hr className="my-5 border-0 w-[50%] mx-auto h-0.5 bg-gradient-to-r from-transparent via-neutral-300 to-transparent" />
 
