@@ -11,7 +11,7 @@ const Experience = () => {
         <div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl mb-3 font-semibold text-center">
             <span className="text-neutral-700 dark:text-neutral-300">Work</span>{" "}
-            <span>Experience</span>
+            <span className="text-gray-900 dark:text-gray-50">Experience</span>
           </h1>
           <hr className="my-5 border-0 w-[50%] mx-auto h-0.5 bg-gradient-to-r from-transparent via-neutral-300 to-transparent" />
 
@@ -23,16 +23,21 @@ const Experience = () => {
           </p>
         </div>
 
-        <div className="card group cursor-pointer p-3 md:p-10 max-w-4xl mx-auto bg-[#9df1df] rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl border-b-8 border-amber-200">
-          <h3 className="job-title flex items-end gap-3 text-2xl md:text-4xl font-semibold mb-2 sm:group-hover:tracking-widest transition-all duration-300">
-            <PiSuitcaseBold />
+        <div className="card group cursor-pointer p-3 md:p-10 max-w-4xl mx-auto  bg-amber-100 dark:bg-blue-950 rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl border-b-8 border-amber-300  dark:border-blue-700">
+          <h3 className="job-title flex items-end gap-3 text-2xl md:text-4xl font-semibold mb-2 sm:group-hover:tracking-widest transition-all duration-300 text-gray-900 dark:text-gray-50">
+            <span
+              className="rounded group-hover:p-1 group-hover:bg-amber-300 dark:group-hover:bg-blue-700  
+            transition-all duration-300"
+            >
+              <PiSuitcaseBold />
+            </span>
             Frontend Developer
           </h3>
-          <p className="job-location italic text-neutral-500">
+          <p className="job-location italic text-neutral-500 dark:text-neutral-400">
             Trivialworks , India
           </p>
 
-          <ul className="job-scope mt-3 list-disc pl-5 text-base sm:text-lg space-y-3">
+          <ul className="job-scope mt-3 list-disc pl-5 text-base sm:text-lg space-y-3 text-neutral-600 dark:text-neutral-300">
             <li className="scope-item">
               Developing and maintaining web applications using React.js and
               other related technologies.

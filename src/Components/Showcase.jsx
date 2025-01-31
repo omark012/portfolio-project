@@ -1,6 +1,7 @@
 import React from "react";
 import profile from "../images/profile.png";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+import { FaRegHand } from "react-icons/fa6";
 
 const Showcase = () => {
   // Typewriter Effect
@@ -18,11 +19,13 @@ const Showcase = () => {
         {/* Text */}
         <div
           className="showcase-text flex flex-col justify-center items-start 
-        gap-3"
+        gap-3 text-neutral-600 dark:text-neutral-300"
         >
-          <p className="w-full intro text-center md:text-left text-black text-2xl md:text-3xl lg:text-4xl font-semibold">
+          <p className="w-full intro text-center md:text-left text-2xl md:text-3xl lg:text-4xl font-semibold">
             Hello, I'm <span className="text-red-600 font-bold">Omar Khan</span>
-            <span className="text-2xl md:text-4xl ml-1">👋</span>
+            <div className="text-2xl w-full md:text-4xl ml-1">
+              {/* <FaRegHand /> */}
+            </div>
           </p>
 
           <div
@@ -32,7 +35,7 @@ const Showcase = () => {
             {text}
             <Cursor cursorColor="red" />
           </div>
-          <div className="description w-full text-black text-lg md:text-xl font-[420] text-justify ">
+          <div className="description w-full  text-lg md:text-xl font-[420] text-justify ">
             As a passionate front-end developer based in India, I specialize in
             creating stunning, user-friendly websites that not only look amazing
             but also function seamlessly. Let’s bring your vision to life and
@@ -98,7 +101,7 @@ const Showcase = () => {
         </div>
 
         {/* Image */}
-        <div className="showcase-image bg-amber-100 rounded-xl w-full max-w-md md:max-w-xl mx-auto hover:scale-95 hover:shadow-sm transition duration-200 ">
+        <div className="showcase-image bg-amber-100 dark:bg-blue-950 rounded-xl w-full max-w-md md:max-w-xl mx-auto hover:scale-95 hover:shadow-sm transition duration-200 ">
           <img
             className="w-full h-auto object-contain rounded-xl"
             src={profile}

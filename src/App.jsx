@@ -14,7 +14,7 @@ import GoToTop from "./Components/GoToTop";
 
 function App() {
   return (
-    <div className="bg-[#EEEEEC] min-h-screen pt-32 md:pt-52">
+    <div className="bg-[#fafaf9] dark:bg-[#09090b] min-h-screen pt-32 md:pt-52 transition-colors duration-300">
       <Header />
       <Showcase />
       <About />

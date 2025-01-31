@@ -69,7 +69,7 @@ const Portfolio = () => {
         <div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl mb-3 font-semibold text-center">
             <span className="text-neutral-700 dark:text-neutral-300">Key</span>{" "}
-            <span>Projects</span>
+            <span className="text-gray-900 dark:text-gray-50">Projects</span>
           </h1>
           <hr className="my-5 border-0 w-[50%] mx-auto h-0.5 bg-gradient-to-r from-transparent via-neutral-300 to-transparent" />
           <p className="w-full text-center text-neutral-500 italic mb-10 text-lg md:text-xl">
@@ -80,7 +80,7 @@ const Portfolio = () => {
         {/* Portfolio container with embla carousel */}
         <div className="embla">
           <div
-            className="embla__viewport border border-gray-400 rounded-lg max-w-6xl mx-auto mt-10 mb-5"
+            className="embla__viewport border-2 border-slate-400 dark:border-slate-600 rounded-lg max-w-6xl mx-auto mt-10 mb-5"
             ref={emblaRef}
           >
             <div className="embla__container">
@@ -107,17 +107,17 @@ const Portfolio = () => {
 
                   {/* Grid 2 */}
                   <div className="portfolio-data">
-                    <h3 className="portfolio-title text-xl md:text-2xl capitalize font-bold mb-2 ">
+                    <h3 className="portfolio-title text-xl md:text-2xl capitalize font-bold mb-2 text-gray-900 dark:text-gray-50 ">
                       {item.title}
                     </h3>
-                    <p className="portfolio-description text-base md:text-lg text-justify mb-4">
+                    <p className="portfolio-description text-base md:text-lg text-justify mb-4 text-neutral-600 dark:text-neutral-300">
                       {item.description}
                     </p>
                     <a
                       href={item.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="portfolio-btn flex items-center justify-between text-black bg-transparent rounded-lg border-3 border-[#0dcfda] py-2 px-4 text-lg transition-all ease-in duration-300 hover:text-white hover:bg-[#0dcfda]"
+                      className="portfolio-btn flex items-center justify-between text-gray-900 dark:text-gray-50 bg-transparent rounded-lg border-3 border-[#0dcfda] py-2 px-4 text-lg transition-all ease-in duration-300 hover:text-white hover:bg-[#0dcfda]"
                     >
                       <p>Live Demo</p>
                       <PiArrowUpRightBold />

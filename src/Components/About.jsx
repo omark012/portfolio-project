@@ -11,21 +11,21 @@ const About = () => {
         <h1 className="text-4xl md:text-5xl lg:text-6xl mb-3 font-semibold text-center">
           {" "}
           <span className="text-neutral-700 dark:text-neutral-300">About </span>
-          <span>Me</span>{" "}
+          <span className="text-gray-900 dark:text-gray-50">Me</span>{" "}
         </h1>
         <hr className="my-5 border-0 w-[50%] mx-auto h-0.5 bg-gradient-to-r from-transparent via-neutral-300 to-transparent" />
         <p className="w-full text-center text-neutral-500 italic mb-10 text-lg md:text-xl">
           Passionate in Designing Clean Code and Seamless User Experiences
         </p>
         <div className="grid md:grid-cols-2 gap-10 items-center">
-          <div className="showcase-image bg-amber-100 rounded-xl w-full max-w-md md:max-w-xl mx-auto hover:scale-95 hover:shadow-sm transition duration-200 ">
+          <div className="showcase-image bg-amber-100 dark:bg-blue-950 rounded-xl w-full max-w-md md:max-w-xl mx-auto hover:scale-95 hover:shadow-sm transition duration-200 ">
             <img
               className="object-contain "
               src={developer}
               alt="there is supposed to be a pic"
             />
           </div>
-          <div className="about-text text-base md:text-lg text-justify">
+          <div className="about-text text-base md:text-lg text-justify text-neutral-600 dark:text-neutral-300">
             <p>
               {" "}
               Hello! My name is Omar Khan, a frontend developer and an aspiring

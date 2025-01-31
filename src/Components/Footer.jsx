@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer id="footer" className="mx-6 p-5 sm:p-10 lg:p-0 mt-20">
-      <div className="w-full p-6 max-w-6xl mx-auto border-t-1 border-gray-500 hover:border-gray-300 transition duration-300 text-center">
+      <div className="w-full p-6 max-w-6xl mx-auto border-t-1 border-gray-500 hover:border-gray-300 transition duration-300 text-center text-gray-800 dark:text-gray-200">
         Copyright &copy; 2025 All rights reserved | Designed & Developed with
         ⚡💻❤️ by
         <span

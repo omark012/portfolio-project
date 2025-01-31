@@ -26,7 +26,7 @@ const Skills = () => {
     {
       id: 3,
       src: javascript,
-      title: "javaScript",
+      title: "JavaScript",
       color: "#eab308",
     },
     {
@@ -75,7 +75,7 @@ const Skills = () => {
       <div className="max-w-6xl mx-auto">
         <h1 className="text-4xl md:text-5xl lg:text-6xl mb-3 font-semibold text-center">
           <span className="text-neutral-700 dark:text-neutral-300">Tech</span>{" "}
-          <span>Skills</span>
+          <span className="text-gray-900 dark:text-gray-50">Skills</span>
         </h1>
         <hr className="my-5 border-0 w-[50%] mx-auto h-0.5 bg-gradient-to-r from-transparent via-red-500 via-yellow-500 via-green-500 via-blue-500 to-transparent" />
         <hr className="my-5 border-0 w-[50%] mx-auto h-0.5 bg-gradient-to-r from-transparent via-pink-200 via-purple-200 via-blue-200 via-teal-200 to-transparent" />
