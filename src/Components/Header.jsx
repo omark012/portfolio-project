@@ -2,7 +2,6 @@ import React, { useRef, useState } from "react";
 import { FaSun, FaMoon } from "react-icons/fa";
 import { GrMenu } from "react-icons/gr";
 import { MdClose } from "react-icons/md";
-import Check from "./Check";
 
 const Header = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -158,7 +157,6 @@ const Header = () => {
               Contact
             </a>
           </li>
-          <Check />
         </ul>
       </header>
     </section>
