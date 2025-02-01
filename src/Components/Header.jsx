@@ -24,7 +24,7 @@ const Header = () => {
   };
 
   return (
-    <section className=" mx-6 fixed inset-x-0 top-5 z-50 bg-[#fafaf9]/99 dark:bg-[#09090b]">
+    <section className=" mx-6 fixed inset-x-0 top-5 z-50 bg-[#fafaf9]/99 dark:bg-[#09090b] transition-colors duration-300">
       <header className="px-5 py-2 max-w-6xl mx-auto md:py-3 font-sans h-16 shadow-sm flex justify-between items-center border border-slate-300 dark:border-slate-600 rounded-xl">
         {/* Logo */}
         <div
@@ -39,7 +39,7 @@ const Header = () => {
           <li>
             <a
               href="#showcase"
-              className="nav-link text-current inline-block py-1 px-2 text-lg font-normal rounded-sm transition-all duration-400 ease-in-out border-b-2 border-transparent hover:border-blue-500 hover:text-blue-500"
+              className="nav-link text-current inline-block py-1 px-2 text-lg font-normal rounded-sm transition-all duration-400 ease-in-out border-b-2 border-transparent hover:text-blue-600 hover:border-blue-600  dark:hover:text-blue-400 dark:hover:border-blue-400"
             >
               Home
             </a>
@@ -47,7 +47,7 @@ const Header = () => {
           <li>
             <a
               href="#about"
-              className="nav-link text-current inline-block py-1 px-2 text-lg font-normal rounded-sm transition-all duration-400 ease-in-out border-b-2 border-transparent hover:border-blue-500 hover:text-blue-500"
+              className="nav-link text-current inline-block py-1 px-2 text-lg font-normal rounded-sm transition-all duration-400 ease-in-out border-b-2 border-transparent hover:text-blue-600 hover:border-blue-600  dark:hover:text-blue-400 dark:hover:border-blue-400"
             >
               About
             </a>
@@ -55,7 +55,7 @@ const Header = () => {
           <li>
             <a
               href="#skills"
-              className="nav-link text-current inline-block py-1 px-2 text-lg font-normal rounded-sm transition-all duration-400 ease-in-out border-b-2 border-transparent hover:border-blue-500 hover:text-blue-500"
+              className="nav-link text-current inline-block py-1 px-2 text-lg font-normal rounded-sm transition-all duration-400 ease-in-out border-b-2 border-transparent hover:text-blue-600 hover:border-blue-600  dark:hover:text-blue-400 dark:hover:border-blue-400"
             >
               Skills
             </a>
@@ -63,7 +63,7 @@ const Header = () => {
           <li>
             <a
               href="#portfolio"
-              className="nav-link text-current inline-block py-1 px-2 text-lg font-normal rounded-sm transition-all duration-400 ease-in-out border-b-2 border-transparent hover:border-blue-500 hover:text-blue-500"
+              className="nav-link text-current inline-block py-1 px-2 text-lg font-normal rounded-sm transition-all duration-400 ease-in-out border-b-2 border-transparent hover:text-blue-600 hover:border-blue-600  dark:hover:text-blue-400 dark:hover:border-blue-400"
             >
               Portfolio
             </a>
@@ -71,7 +71,7 @@ const Header = () => {
           <li>
             <a
               href="#contact"
-              className="nav-link text-current inline-block py-1 px-2 text-lg font-normal rounded-sm transition-all duration-400 ease-in-out border-b-2 border-transparent hover:border-blue-500 hover:text-blue-500"
+              className="nav-link text-current inline-block py-1 px-2 text-lg font-normal rounded-sm transition-all duration-400 ease-in-out border-b-2 border-transparent hover:text-blue-600 hover:border-blue-600  dark:hover:text-blue-400 dark:hover:border-blue-400"
             >
               Contact
             </a>
@@ -84,7 +84,7 @@ const Header = () => {
           {/* Dark mode */}
           <button
             onClick={toggleColorMode}
-            className="p-1 text-lg cursor-pointer rounded transition-all duration-300 hover:bg-gray-300"
+            className="p-1 text-xl cursor-pointer rounded transition-all duration-300 hover:bg-neutral-200 dark:hover:bg-neutral-500"
           >
             {isDarkMode ? <FaMoon color="white" /> : <FaSun color="orange" />}
           </button>

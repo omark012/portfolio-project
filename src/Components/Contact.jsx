@@ -47,8 +47,11 @@ const Contact = () => {
               placeholder="Enter your message"
             ></textarea>
             <hr className="my-5 border-0 w-full h-0.5 bg-gradient-to-r from-transparent via-neutral-300" />
-            <button className="flex items-center justify-center cursor-pointer gap-2 w-full bg-black text-white rounded px-4 py-2 ">
-              Submit <IoIosArrowForward color="white" />
+            <button className="flex items-center justify-center cursor-pointer gap-1 w-full bg-black text-white rounded px-4 py-2 transition-all duration-300 hover:scale-95">
+              <span>Submit</span>
+              <span>
+                <IoIosArrowForward color="white" />
+              </span>
             </button>
           </form>
         </div>

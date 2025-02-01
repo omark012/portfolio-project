@@ -39,27 +39,34 @@ const Experience = () => {
 
           <ul className="job-scope mt-3 list-disc pl-5 text-base sm:text-lg space-y-3 text-neutral-600 dark:text-neutral-300">
             <li className="scope-item">
-              Developing and maintaining web applications using React.js and
-              other related technologies.
+              Developed responsive web applications with React.js, leveraging
+              reusable components and custom hooks to improve maintainability
+              and reduce code duplication.
             </li>
             <li className="scope-item">
-              Collaborating with cross-functional teams including designers,
+              Collaborated with cross-functional teams including designers,
               product managers, and other developers to create high-quality
-              products.
+              products and reduce project timelines by 25%.
             </li>
             <li className="scope-item">
-              Contributed in the development of the sell your property
-              module.Built the UI for it and integrated it with the firebase
-              APIs.
+              Implemented robust form validation with React Hook Form to ensure
+              data integrity
             </li>
             <li className="scope-item">
-              Implementing responsive design and ensuring cross-browser
-              compatibility.
+              Developed pixel-perfect, responsive user interfaces with
+              mobile-first principles using TailwindCSS and Material-UI,
+              achieving daily traffic of 1,000–2,000 users.
             </li>
+
             <li className="scope-item">
-              Developed pixel-perfect responsive web applications achieving
-              daily traffic of 1000-2000 users.
+              Refactored and modernized legacy codebases by replacing old
+              components with functional components, hooks, and optimized logic.
             </li>
+            {/* <li className="scope-item">
+        Contributed in the development of the sell your property
+        module.Built the UI for it and integrated it with the firebase
+        APIs.
+      </li> */}
           </ul>
         </div>
       </div>
