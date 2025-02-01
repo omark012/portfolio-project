@@ -36,7 +36,7 @@ const Showcase = () => {
             <Cursor cursorColor="red" />
           </div>
           <div className="description w-full  text-lg md:text-xl font-[420] text-justify ">
-            As a passionate front-end developer based in India, I specialize in
+            As a passionate Frontend Developer based in India, I specialize in
             creating stunning, user-friendly websites that not only look amazing
             but also function seamlessly. Let’s bring your vision to life and
             create something extraordinary together. ✨{" "}

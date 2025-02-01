@@ -25,22 +25,28 @@ const About = () => {
               alt="there is supposed to be a pic"
             />
           </div>
+
           <div className="about-text text-base md:text-lg text-justify text-neutral-600 dark:text-neutral-300">
             <p>
               {" "}
-              Hello! My name is Omar Khan, a frontend developer and an aspiring
-              full-stack (MERN) developer.
+              Hello! I'm Omar Khan, a <strong>Frontend Developer</strong> and an
+              aspiring Full-Stack (MERN) Developer. I specialize in modern web
+              technologies like <strong>React.js</strong> and{" "}
+              <strong>Next.js</strong> , building <strong>scalable</strong>{" "}
+              components that transform designs into interactive, user-centric
+              applications.
             </p>
             <br />
             <p>
               I like to code things for web, and enjoy bringing ideas to life in
-              the browser. I'm always open to adapt to work with team and work
-              on new frontend skills and technology.
+              the browser. I'm always eager to <strong>collaborate</strong> with
+              teams, <strong>learn</strong> new frontend technologies, and push
+              the boundaries of what's possible.
             </p>
             <br />
             <p>
-              Learning new things always excite me, and I am constantly seeking
-              new challenges to expand my knowledge and skills
+              Learning new things always excites me, and I'm constantly seeking{" "}
+              <strong>new challenges</strong> to expand my knowledge and skills.
             </p>
           </div>
         </div>
